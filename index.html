@@ -1,69 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Portfolio of Alice Martinez </title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #2c3e50;
-        }
-        ul {
-            line-height: 1.6;
-        }
-        .game-link {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 15px;
-            background: #3498db;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .game-link:hover {
-            background: #2980b9;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Alice Martinez - Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f8f8f8;
+    }
+    .name {
+      color: #C8A2C8; /* Lilac Purple */
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+    h2 {
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+    .project {
+      margin-bottom: 1.5em;
+    }
+    .project-title {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-bottom: 0.2em;
+    }
+    .project-description {
+      margin-bottom: 0.5em;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Zelda Game Project</h1>
-        <p><strong>Student Name:</strong> Alice Martinez</p>
+  <!-- Name in Lilac Purple -->
+  <h1 class="name">Alice Martinez</h1>
 
-        <h2>My Contributions</h2>
-        <ul>
-            <li><strong>GameObject Movement & AI:</strong> Developed movement behavior for enemies (Wallmasters, Keese), the horse, and the player, ensuring smooth interactions and animations.</li>
-            <li><strong>Physics & Collisions:</strong> Adjusted rigidbody physics, colliders, and triggers to manage enemy boundaries, horse interactions, and player collisions.</li>
-            <li><strong>Custom Mechanic Design:</strong> Created and refined the horse-riding mechanic, implementing mount/dismount logic, a ride timer, and carrot-feeding to extend ride duration.</li>
-            <li><strong>Level & Room Design:</strong> Contributed to the 2D Bow Room, designing mechanics that challenge players to use projectiles effectively.</li>
-            <li><strong>Triggers & Interaction Systems:</strong> Managed how objects respond to player actions, including enemy AI activation, room transitions, and special mechanics like enemies reacting to the player’s horse.</li>
-        </ul>
+  <!-- Projects Heading -->
+  <h2>Projects</h2>
 
-        <h2>Technology Used</h2>
-        <ul>
-            <li><strong>Game Engine:</strong> Unity</li>
-            <li><strong>Programming Language:</strong> C#</li>
-            <li><strong>Tools:</strong> Visual Studio, Git, Unity Physics System</li>
-        </ul>
-
-	<a href="ZeldaBuilds.zip" class="game-link" download>Download Zelda Game (ZIP)</a>
+  <!-- Zelda (P1) -->
+  <div class="project">
+    <div class="project-title">Zelda</div>
+    <div class="project-description">
+      <p>
+        We remade the original dungeon from The Legend of Zelda. I worked mainly on 
+        enemy movement, spawning, and different modes of attacks for different enemies 
+        with different health values.
+      </p>
+      <p><strong>Technologies Used:</strong> C#, Unity</p>
     </div>
+    <p>
+      <a href="./p1_submit_webbuild/index.html" target="_blank">
+        Play Zelda
+      </a>
+    </p>
+  </div>
+
+  <!-- Flower Zen (P2) -->
+  <div class="project">
+    <div class="project-title">Flower Zen</div>
+    <div class="project-description">
+      <p>
+        Flower Zen imitates a peaceful flower shop experience. I worked on making 
+        the flow of a workday—taking orders, completing those orders, and implementing 
+        scoring for the player.
+      </p>
+      <p><strong>Technologies Used:</strong> C#, Unity</p>
+    </div>
+    <p>
+      <a href="./p2_gold_webbuild/index.html" target="_blank">
+        Play Flower Zen
+      </a>
+    </p>
+  </div>
 
 </body>
 </html>
