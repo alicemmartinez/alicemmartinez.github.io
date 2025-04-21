@@ -1,86 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Alice Martinez - Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      background-color: #f8f8f8;
-    }
-    .name {
-      color: #C8A2C8; /* Lilac Purple */
-      font-size: 2em;
-      margin-bottom: 0.5em;
-    }
-    h2 {
-      margin-top: 1.5em;
-      margin-bottom: 0.5em;
-    }
-    .project {
-      margin-bottom: 1.5em;
-    }
-    .project-title {
-      font-weight: bold;
-      font-size: 1.2em;
-      margin-bottom: 0.2em;
-    }
-    .project-description {
-      margin-bottom: 0.5em;
-    }
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Alice Martinez — Game Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 60px 20px;
+            background: radial-gradient(circle at top, #e1d8f1, #b2c2f2);
+            font-family: 'Outfit', sans-serif;
+            color: #1b1b1b;
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            text-align: center;
+            font-size: 2.8em;
+            color: #4f4fff;
+            text-shadow: 1px 1px #fff, 0 0 10px #c7c7ff;
+            margin-bottom: 60px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            display: grid;
+            gap: 40px;
+        }
+
+        .project {
+            background: linear-gradient(to bottom right, #f9faff, #e7e8fc);
+            border-radius: 28px;
+            padding: 32px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            border: 2px solid #d2d4ff;
+            transition: transform 0.2s ease;
+        }
+
+            .project:hover {
+                transform: scale(1.015);
+            }
+
+        .project-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.6em;
+            color: #5f5fff;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .contributions {
+            font-size: 0.98em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .play-button {
+            background: linear-gradient(to bottom, #b0f0ff, #61c2f3);
+            border: 2px solid #90e4ff;
+            border-radius: 40px;
+            color: white;
+            padding: 14px 28px;
+            font-size: 1em;
+            font-weight: bold;
+            font-family: 'Orbitron', sans-serif;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), inset 0 0 8px rgba(255, 255, 255, 0.6);
+            transition: all 0.25s ease;
+        }
+
+            .play-button:hover {
+                background: linear-gradient(to bottom, #61c2f3, #3a98d8);
+                transform: scale(1.05);
+                box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+            }
+    </style>
 </head>
 <body>
 
-  <!-- Name in Lilac Purple -->
-  <h1 class="name">Alice Martinez</h1>
+    <h1>Alice Martinez — Game Portfolio</h1>
 
-  <!-- Projects Heading -->
-  <h2>Projects</h2>
+    <div class="container">
 
-  <!-- Zelda (P1) -->
-  <div class="project">
-    <div class="project-title">Zelda</div>
-    <div class="project-description">
-      <p>
-        We remade the original dungeon from The Legend of Zelda. I worked mainly on 
-        enemy movement, spawning, and different modes of attacks for different enemies 
-        with different health values.
-      </p>
-      <p><strong>Technologies Used:</strong> C#, Unity</p>
+        <div class="project">
+            <div class="project-title">Zelda Dungeon</div>
+            <div class="description">A remake of the first dungeon from The Legend of Zelda.</div>
+            <div class="contributions">
+                I worked on enemy movement and attack behaviors using raycasting. I built a shared health system that both the player and enemies pulled from, which helped make damage feel consistent. I also set up enemy boundaries so they'd stay in their assigned rooms, and used an eventbus system to manage item pickups and how they affect gameplay.
+            </div>
+            <a href="https://alicemartinez.itch.io/zelda" class="play-button" target="_blank">▶ Launch</a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Flower Zen</div>
+            <div class="description">A peaceful flower shop simulator with cozy vibes.</div>
+            <div class="contributions">
+                I programmed the full order-taking and scoring system from scratch. I also built the core gameplay loop — letting players cut and arrange flowers to match requests. Most of my time went into making everything feel snappy and responsive, from clicking tools to completing orders.
+            </div>
+            <a href="https://alicemartinez.itch.io/flower-zen" class="play-button" target="_blank">▶ Launch</a>
+        </div>
+
+        <div class="project">
+            <div class="project-title">Lolie The Roly-Poly</div>
+            <div class="description">A puzzle-platformer where a tiny bug journeys underground to reunite with her family.</div>
+            <div class="contributions">
+                I designed and animated bugs like ants, worms, and spiders — giving them behaviors that respond to the player (like spiders waiting to strike from webs). I also worked on the level layout, the underground visual environment, and all the scene transitions like fade-ins and fade-outs.
+            </div>
+            <a href="https://alicemartinez.itch.io/lolie" class="play-button" target="_blank">▶ Launch</a>
+        </div>
+
     </div>
-    <p>
-      <a href="https://alicemartinez.itch.io/zelda" target="_blank">
-        Play Zelda
-      </a>
-    </p>
-  </div>
-
-  <!-- Flower Zen (P2) -->
-  <div class="project">
-    <div class="project-title">Flower Zen</div>
-    <div class="project-description">
-      <p>
-        Flower Zen imitates a peaceful flower shop experience. I worked on making 
-        the flow of a workday—taking orders, completing those orders, and implementing 
-        scoring for the player.
-      </p>
-      <p><strong>Technologies Used:</strong> C#, Unity</p>
-    </div>
-    <p>
-      <a href="https://alicemartinez.itch.io/flower-zen" target="_blank">
-        Play Flower Zen
-      </a>
-    </p>
-  </div>
 
 </body>
 </html>
